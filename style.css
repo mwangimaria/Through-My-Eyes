@@ -1,43 +1,51 @@
-body {
+.body {
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size:  1.4em;
-    text-overflow: uppercase;
+    font-size: 2em;
+    text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.2);
+    
  }
 
- h1 {
-   text-align: center;
-   align-self: start;
-   font-size: 3em;
-   margin-bottom: 20px;
-}
+ 
 
-.nav {
+ h1 {
+    color: #000000;
+    text-align: center;
+    align-self: start;
+    font-size: 3em;
+    margin-bottom: 20px;
+ }
+
+ .nav {
     position: fixed;
-    top: 0;
+    top: -0;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     width: 100%;
     height: 100px;
     line-height: 100px;
-    background: linear-gradient(rgba(29, 57, 67, 0.5), transparent);
+    background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
     z-index: 100;
-}
+ }
 
-.nav-logo p {
-    color: rgb(255, 255, 255); 
+ .nav-logo p {
+    color: #fff;
     font-size: 25px;
     font-weight: 600;
-}
-  
-.nav-menu ul {
-    display: flex;
-}
+    
+ }
 
+
+ .nav-menu ul {
+    display: flex;
+
+ }
+ 
 .nav-menu ul li {
     list-style-type: none;
 }
@@ -47,18 +55,19 @@ body {
     font-weight: 500;
     color: #ffffff;
     padding-bottom: 15px;
-}
+    margin: 0 25px;
+} 
 
-.link:hover, 
+.link:hover,
 .active {
     border-bottom: 2px solid #000000;
 }
 
-.nav-bottom .btn {
+.nav-button .btn {
     width: 130px;
     height: 40px;
     font-weight: 500;
-    background: rgba(67, 67, 67, 0.4);
+    background: rgba(67, 25, 67, 0.4);
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -66,56 +75,41 @@ body {
 }
 
 .btn:hover {
-    background: rgba(67, 67, 67, 0.7);
+    background: rgba(67, 67, 67, 0.3);
 }
 
 .btn.white-btn {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(67, 67, 67, 0.7);
 }
 
 .btn.white-btn:hover {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(67, 67, 67, 0.5);
 }
 
 .nav-menu-btn {
     display: none;
 }
 
-.form-box {
+.from-box {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50% );
     display: none;
     align-items: center;
     justify-content: center;
-    width: 550px;
-    height: 500px;
-    border-radius: 20px;
+    width: 550px; 
+    height: 500px; 
+    border-radius: 20px; 
     z-index: 1000;
     padding: 20px;
 }
-
-.form-box.active {
+  
+.from-box.active {
     display: flex;
 }
 
-.login-container
-.register-container {
-    position: absolute;
-    background: linear-gradient(135deg, #ffecd2, #ffccbb);
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    transition: 0.5s ease-in-out;
-}
-
-.register-container {
-    display: none;
-}
-
-.top-span {
+.top span{
     color: #333;
     font-size: small;
     padding: 10px 0;
@@ -123,23 +117,30 @@ body {
     justify-content: center;
 }
 
-.top-span a {
+.top span a{
     font-weight: 500;
     color: #007bff;
     margin-left: 5px;
     text-decoration: none;
 }
 
-.top-span a:hover {
+.top span a:hover{
     text-decoration: underline;
 }
 
-header {
+header{
+    color: #333;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.input-box{
     position: relative;
     margin-bottom: 20px;
 }
 
-.input-field {
+.input-feild{
     font-size: 15px;
     background: rgba(0, 0, 0, 0.05);
     color: #333;
@@ -152,58 +153,46 @@ header {
     transition: 0.2s ease;
 }
 
-.input-field:hover,
-.imput-field:focus {
+.input-feild:hover
+.input-feild:focus{
     background: rgba(0, 0, 0, 0.08);
 }
 
-.imput-box i {
+.input-box i {
     position: absolute;
     top: 15px;
     left: 15px;
     color: #666;
 }
 
-.submit {
-    font-size: 15px;
-    font-weight: 500;
-    color:rgb(255, 255, 255);
-    background: #007bff;
-    height: 45px;
-    width: 100%;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-.submit:hover {
+.submit:hover{
     background: #0056b3;
-    box-shadow: 1px 5px7px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.02);
 }
 
-.two-col {
+.two-col{
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     font-size: small;
-    margin: top 10px;
+    margin-top: 10px;
     color: #333;
 }
 
-.two-col .one {
+.two-col.one{
     display: flex;
     gap: 5px;
 }
 
-.two label a {
+.two-lable a{
     text-decoration: none;
     color: #007bff;
 }
 
-.two label a:hover {
+.two-lable a:hover{
     text-decoration: underline;
 }
 
-.close-btn {
+.close-btn{
     position: absolute;
     top: 15px;
     right: 15px;
@@ -215,34 +204,30 @@ header {
     z-index: 1001;
 }
 
-.close-btn:hover {
+.close-btn:hover{
     color: #ff4d4d;
 }
 
-/*----------------
- SLIDESHOW IMAGE AREA
- --------------*/
- .container,
- .slides {
+.container
+.slides{
     width: 100%;
     height: 100vh;
- }
+}
 
-.slides {
+.slides{
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
 
-.slides{
+.slides img{
     width: 100%;
     height: 98%;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- }
-
+}
 
 @media only screen and (max-width: 786px) {
     .nav-button {
@@ -255,16 +240,16 @@ header {
 
     .nav-menu {
         position: absolute;
-        top: -800px;
+        top: 1000px;
         display: flex;
         justify-content: center;
-        background: rgba(67, 24, 67, 0.2);
+        background: rgba(67, 67, 67, 0.2);
         width: 100%;
         height: 90vh;
-        backdrop-filter: blur(30px);
+        backdrop-filter: blur(20px);
         transition: 0.3s;
     }
-
+    
     .nav-menu ul {
         flex-direction: column;
         text-align: center;
@@ -277,14 +262,50 @@ header {
     .nav-menu-btn i {
         font-size: 25px;
         color: #fff;
-        padding: 20px;
-        background: rgba(255, 255, 255, 0.15);
+        padding: 10px;
+        background: rgba(39, 39, 39, 0.2);
         border-radius: 50%;
         cursor: pointer;
         transition: 0.3s;
     }
 
     .nav-menu-btn i:hover {
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(39, 39, 39, 0.15);
     }
 }
+
+.home-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #d56000 0%), #ffae00 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.home-container {
+    max-width: 100%;
+    background: rgba(221, 155, 0, 0.9);
+    border-left: 5px solid #000000;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+}
+
+.home-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #ffc637;
+}
+
+.home-container p {
+    font-size: 1rem;
+    line-height: 3.8;
+    color: #333;
+}
+
+@media only screen and (max )
